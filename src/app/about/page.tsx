@@ -1,3 +1,4 @@
+
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Target, Eye, Briefcase } from "lucide-react";
@@ -50,7 +51,7 @@ export default function AboutUsPage() {
             </p>
           </CardContent>
         </Card>
-      </Card>
+      </div>
       
       <SectionTitle
         title="Meet the Team"
