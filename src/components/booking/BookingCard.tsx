@@ -16,23 +16,7 @@ export function BookingCard({ person, onBook }: BookingCardProps) {
 
   return (
     <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
-      <CardHeader className="p-4 pb-2 items-center text-center">
-        <Image
-          src={person.imageUrl}
-          alt={`Portrait of ${person.name}`}
-          width={96}
-          height={96}
-          className="rounded-full mb-3 border-2 border-primary/30"
-          data-ai-hint={person.dataAiHint}
-        />
-        <CardTitle className="text-lg">{person.name}</CardTitle>
-        <CardDescription className="text-xs h-8 line-clamp-2">
-          {isProfessor ? (person as Professor).title : (person as TeamMember).role}
-        </CardDescription>
-        <Badge variant={isProfessor ? "default" : "secondary"} className="mt-1 text-xs">
-          {isProfessor ? "Faculty" : "Team Member"}
-        </Badge>
-      </CardHeader>
+      {/* CardHeader removed as per request */}
       <CardContent className="p-4 pt-2 flex-grow">
         <p className="text-xs text-muted-foreground mb-2 line-clamp-3 h-[45px]">
           {person.bio.substring(0, 90)}...
