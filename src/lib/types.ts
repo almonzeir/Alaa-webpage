@@ -1,46 +1,28 @@
 import type { LucideIcon } from "lucide-react";
 
+// Retaining SocialLink as it might be used for team or general site social links
 export interface SocialLink {
   platform: string;
   url: string;
   IconComponent: LucideIcon;
 }
 
-export interface Publication {
-  title: string;
-  journal?: string;
-  year?: number;
-  link?: string;
-}
-
-export interface Professor {
-  id: string;
-  name: string;
-  title: string;
-  imageUrl: string;
-  dataAiHint?: string;
-  bio: string;
-  researchInterests: string[];
-  publications: Publication[];
-  socialLinks: SocialLink[];
-}
-
-export interface SoftSkill {
-  name: string;
-  dateRecorded: string; // e.g., "2023-10-26"
-  IconComponent: LucideIcon;
-}
-
-export interface TeamMember {
-  id: string;
+// Basic type for team members for the About Us page
+export interface TeamMemberSimple {
   name: string;
   role: string;
-  imageUrl: string;
+  imageUrl: string; // Using string for placeholder
   dataAiHint?: string;
-  bio: string;
-  videoResumeUrl?: string;
-  resumeUrl?: string;
-  coverLetterUrl?: string;
-  softSkills: SoftSkill[];
-  socialLinks?: SocialLink[]; // Optional social links for team members
 }
+
+// Generic type for downloadable resources
+export interface DownloadableResource {
+  title: string;
+  description?: string;
+  fileName: string; // e.g., "resume-template.docx"
+  fileUrl: string; // Should be a public URL or path to a static asset
+  icon?: LucideIcon;
+}
+
+// You can expand this file with more specific types as the project grows.
+// For example, for soft skill articles, quizzes, etc.

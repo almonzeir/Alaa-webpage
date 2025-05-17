@@ -1,23 +1,19 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google'; // Corrected import name for Geist Sans
+import { Poppins } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from "@/components/ui/toaster";
 
-const geistSans = Geist({ // Corrected usage
-  variable: '--font-geist-sans',
+const poppins = Poppins({
   subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins',
 });
 
 export const metadata: Metadata = {
-  title: 'Synergy Hub - Collaboration & Innovation',
-  description: 'Showcasing Prof. Dr. Yunis, Prof. Dr. Suraya, and their dynamic team. Explore profiles, research, and connect with us.',
+  title: 'EmpowerPath Careers - Pathway to Success for Your Future',
+  description: 'Support for students, fresh graduates, and unemployed youth in building strong resumes, video resumes, cover letters, and developing soft skills.',
 };
 
 export default function RootLayout({
@@ -27,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
+      <body className={`${poppins.variable} antialiased flex flex-col min-h-screen bg-background`}>
         <Header />
         <main className="flex-grow">
           {children}

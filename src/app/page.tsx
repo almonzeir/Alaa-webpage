@@ -2,118 +2,155 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { SectionTitle } from "@/components/shared/SectionTitle";
-import { ProfessorCard } from "@/components/faculty/ProfessorCard";
-import { TeamMemberCard } from "@/components/team/TeamMemberCard";
-import { professors } from "@/data/professors";
-import { teamMembers } from "@/data/teamMembers";
-import { ArrowRight, Users, Brain, Handshake } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { ArrowRight, FileText, Video, Mail, Sparkles, Search, Users, Lightbulb, Handshake } from "lucide-react";
+
+const services = [
+  {
+    title: "Resume Builder",
+    description: "Craft compelling resumes with our expert tips and templates.",
+    href: "/resume-builder",
+    icon: FileText,
+    bgColor: "bg-blue-500/10",
+    textColor: "text-blue-600",
+    borderColor: "border-blue-500/20",
+    iconColor: "text-blue-500"
+  },
+  {
+    title: "Video Resume (Visume)",
+    description: "Create impactful video resumes that showcase your personality.",
+    href: "/video-resume",
+    icon: Video,
+    bgColor: "bg-teal-500/10",
+    textColor: "text-teal-600",
+    borderColor: "border-teal-500/20",
+    iconColor: "text-teal-500"
+  },
+  {
+    title: "Cover Letter Writing",
+    description: "Learn to write persuasive cover letters that get noticed.",
+    href: "/cover-letter",
+    icon: Mail,
+    bgColor: "bg-purple-500/10",
+    textColor: "text-purple-600",
+    borderColor: "border-purple-500/20",
+    iconColor: "text-purple-500"
+  },
+  {
+    title: "Soft Skills Hub",
+    description: "Develop essential soft skills for career success and personal growth.",
+    href: "/soft-skills-hub",
+    icon: Sparkles,
+    bgColor: "bg-amber-500/10",
+    textColor: "text-amber-600",
+    borderColor: "border-amber-500/20",
+    iconColor: "text-amber-500"
+  },
+];
 
 export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-primary/10 via-background to-background">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-primary">
-            Welcome to Synergy Hub
+      <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary via-primary/70 to-accent">
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="container relative mx-auto px-4 text-center z-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-primary-foreground">
+            EmpowerPath Careers
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-8">
-            A dynamic platform dedicated to showcasing the collaborative work of Prof. Dr. Yunis, Prof. Dr. Suraya, and their innovative team. Discover our research, expertise, and connect with us to explore new frontiers.
+          <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto mb-10">
+            Pathway to Success for Your Future
           </p>
-          <div className="space-x-4">
-            <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              <Link href="/booking">
-                Connect With Us <Handshake className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link href="/team">
-                Meet the Team <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+          <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-3 rounded-lg shadow-lg transition-transform hover:scale-105">
+            <Link href="/resume-builder">
+              Start Your Career Journey Today <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+          <div className="mt-12">
+            {/* Placeholder for introduction video or animation */}
+            <div className="aspect-video bg-slate-700/50 rounded-lg max-w-3xl mx-auto flex items-center justify-center">
+              <p className="text-primary-foreground/70">Introduction Video/Animation Placeholder</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* About Section - Optional */}
-      <section className="py-12 md:py-20">
+      {/* Services Section */}
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <SectionTitle title="About Synergy Hub" subtitle="Driving innovation through collaboration" />
+          <SectionTitle
+            title="Our Core Services"
+            subtitle="Everything you need to kickstart your career with confidence."
+            className="mb-12"
+          />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service) => (
+              <Card key={service.title} className={`shadow-lg hover:shadow-2xl transition-shadow duration-300 border-2 ${service.borderColor} flex flex-col`}>
+                <CardHeader className="items-center text-center p-6">
+                  <div className={`p-4 rounded-full ${service.bgColor} mb-4`}>
+                    <service.icon className={`h-10 w-10 ${service.iconColor}`} />
+                  </div>
+                  <CardTitle className={`text-xl ${service.textColor}`}>{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="px-6 pb-4 text-center flex-grow">
+                  <CardDescription className="text-sm text-muted-foreground leading-relaxed">
+                    {service.description}
+                  </CardDescription>
+                </CardContent>
+                <div className="p-6 pt-0 mt-auto">
+                  <Button asChild variant="outline" className={`w-full border-${service.textColor.split('-')[1]}-500/50 text-${service.textColor.split('-')[1]}-600 hover:bg-${service.bgColor} hover:text-${service.textColor.split('-')[1]}-700`}>
+                    <Link href={service.href}>
+                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section (Placeholder) */}
+      <section className="py-16 md:py-24 bg-secondary/20">
+        <div className="container mx-auto px-4">
+          <SectionTitle title="Why EmpowerPath?" subtitle="Dedicated support for your career journey." className="mb-12" />
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="p-6 bg-card rounded-lg shadow-md">
-              <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Collaborative Spirit</h3>
+              <Lightbulb className="h-12 w-12 text-accent mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Expert Guidance</h3>
               <p className="text-muted-foreground text-sm">
-                We believe in the power of teamwork and diverse perspectives to solve complex challenges.
+                Access curated resources and expert tips for every step.
               </p>
             </div>
             <div className="p-6 bg-card rounded-lg shadow-md">
-              <Brain className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Innovative Research</h3>
+              <Users className="h-12 w-12 text-accent mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Youth Focused</h3>
               <p className="text-muted-foreground text-sm">
-                Our work spans across social business, collaborative studies, and cutting-edge technologies.
+                Tailored for students, fresh graduates, and unemployed youth.
               </p>
             </div>
             <div className="p-6 bg-card rounded-lg shadow-md">
-              <Handshake className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Community Engagement</h3>
+              <Handshake className="h-12 w-12 text-accent mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Free Resources</h3>
               <p className="text-muted-foreground text-sm">
-                We strive to make a tangible impact by connecting our research with real-world applications.
+                All our templates, guides, and checklists are free to download.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-
-      {/* Faculty Section */}
-      <section className="py-12 md:py-20 bg-secondary/50">
-        <div className="container mx-auto px-4">
-          <SectionTitle title="Meet Our Faculty" subtitle="Guiding research and innovation" />
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {professors.map((prof) => (
-              <ProfessorCard key={prof.id} professor={prof} />
-            ))}
-          </div>
-           <div className="text-center mt-10">
-            <Button variant="link" asChild>
-              <Link href="/faculty">
-                View All Faculty <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-12 md:py-20">
-        <div className="container mx-auto px-4">
-          <SectionTitle title="Our Dedicated Team" subtitle="The driving force behind our projects" />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.slice(0, 3).map((member) => ( // Show first 3 team members
-              <TeamMemberCard key={member.id} member={member} />
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link href="/team">
-                Meet the Full Team <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* Call to Action */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Collaborate or Learn More?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Build Your Future?</h2>
           <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">
-            We are always open to new ideas, partnerships, and discussions. Reach out to connect with our team or faculty members.
+            Explore our resources and take the first step towards a successful career. We're here to help you shine!
           </p>
-          <Button size="lg" variant="outline" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90" asChild>
-            <Link href="/booking">
-              Get in Touch <Handshake className="ml-2 h-5 w-5" />
+          <Button size="lg" variant="outline" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 hover:text-primary/90" asChild>
+            <Link href="/contact">
+              Get in Touch <Search className="ml-2 h-5 w-5" />
             </Link>
           </Button>
         </div>

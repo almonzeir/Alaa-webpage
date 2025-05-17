@@ -18,10 +18,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'firebasestudio.googleapis.com',
+        hostname: 'firebasestudio.googleapis.com', // Keeping this if it's still used elsewhere or by mistake
         port: '',
         pathname: '/**',
       }
+      // Add other necessary domains if you use images from different sources
     ],
   },
 };
