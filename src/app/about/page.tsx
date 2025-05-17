@@ -5,10 +5,12 @@ import { Users, Target, Eye, Briefcase } from "lucide-react";
 import Image from "next/image";
 
 const teamMembers = [
-  { name: "Member One", role: "Project Lead", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
-  { name: "Member Two", role: "Content Strategist", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
-  { name: "Member Three", role: "Design Specialist", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
-  { name: "Member Four", role: "Developer", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
+  { name: "Alaaldin", role: "Team Member", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
+  { name: "Albaraa", role: "Team Member", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
+  { name: "Abdallah", role: "Team Member", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
+  { name: "Siti Nur", role: "Team Member", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
+  { name: "Norshakirah", role: "Team Member", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
+  { name: "Wan Atikah", role: "Team Member", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
 ];
 
 export default function AboutUsPage() {
@@ -58,7 +60,7 @@ export default function AboutUsPage() {
         subtitle="The passionate individuals behind EmpowerPath Careers."
         className="mt-16"
       />
-      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
         {teamMembers.map((member) => (
           <Card key={member.name} className="text-center shadow-md hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-6">
