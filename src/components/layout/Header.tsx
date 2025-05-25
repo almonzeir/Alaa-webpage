@@ -8,7 +8,7 @@ const navItems = [
   { href: "/resume-builder", label: "Resume Builder" },
   { href: "/video-resume", label: "Video Resume" },
   { href: "/cover-letter", label: "Cover Letter" },
-  { href: "/soft-skills-hub", label: "Soft Skills" },
+  // { href: "/soft-skills-hub", label: "Soft Skills" }, // Removed this line
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
