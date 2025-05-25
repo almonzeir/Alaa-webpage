@@ -9,7 +9,7 @@ const navItems = [
   { href: "/resume-builder", label: "Resume Builder" },
   { href: "/video-resume", label: "Video Resume" },
   { href: "/cover-letter", label: "Cover Letter" },
-  { href: "/soft-skills-hub", label: "Soft Skills Hub"},
+  { href: "#", label: "LinkedIn"}, // Reflects previous change to LinkedIn
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
@@ -19,12 +19,13 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Image 
-            src="/empowerpath-logo.png" 
-            alt="EmpowerPath Careers Logo" 
-            width={40} 
-            height={40} 
-            className="h-10 w-10" // Adjusted for consistency, can be fine-tuned
+          <Image
+            src="/empowerpath-logo.png"
+            alt="EmpowerPath Careers Logo"
+            width={48}
+            height={48}
+            className="h-12 w-12"
+            priority
           />
           <span className="font-bold text-xl sm:inline-block text-primary">EmpowerPath Careers</span>
         </Link>
