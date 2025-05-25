@@ -56,11 +56,11 @@ export default function HomePage() {
       <section className="relative py-20 md:py-32">
         <Image
           src="https://placehold.co/1920x1080.png"
-          alt="Diverse group of young professionals collaborating"
+          alt="Empowered youth embarking on their career paths"
           layout="fill"
           objectFit="cover"
           className="z-0"
-          data-ai-hint="community collaboration"
+          data-ai-hint="youth empowerment"
           priority
         />
         <div className="absolute inset-0 bg-black/50 z-1"></div> {/* Adjusted overlay for better readability */}
