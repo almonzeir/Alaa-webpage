@@ -1,7 +1,7 @@
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Instagram, Youtube } from "lucide-react"; // Assuming TikTok is represented by Youtube
+import { Mail, Phone, MapPin, Instagram, Youtube, Linkedin } from "lucide-react"; // Assuming TikTok is represented by Youtube
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -63,6 +63,9 @@ export default function ContactPage() {
                 <Link href="https://tiktok.com/@resuready" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary" aria-label="TikTok">
                   {/* Using Youtube as a placeholder, replace with a proper TikTok icon SVG if available */}
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-youtube"><path d="M12.025 21.493c-.017.003-.033.003-.05.003-4.398 0-8.004-3.203-8.004-7.143 0-3.94 3.606-7.143 8.004-7.143.017 0 .033 0 .05.002 4.385.025 7.955 3.225 7.955 7.146 0 3.92-3.57 7.12-7.955 7.135Z"/><path d="M10.035 10.667a.5.5 0 0 0-.52.495v4.505a.5.5 0 0 0 .777.416l3.753-2.253a.5.5 0 0 0 0-.832l-3.753-2.253a.5.5 0 0 0-.257-.078Z"/></svg>
+                </Link>
+                <Link href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary" aria-label="LinkedIn">
+                  <Linkedin className="h-7 w-7" />
                 </Link>
               </div>
             </div>
