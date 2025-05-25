@@ -42,8 +42,8 @@ export default function ContactPage() {
             <div className="flex items-start space-x-3">
               <Phone className="h-6 w-6 text-accent mt-1" />
               <div>
-                <h3 className="font-semibold">Phone (Optional)</h3>
-                <p className="text-muted-foreground">(123) 456-7890 (Placeholder)</p>
+                <h3 className="font-semibold">Phone</h3>
+                <p className="text-muted-foreground">+601111980319</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
