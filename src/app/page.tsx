@@ -68,7 +68,7 @@ export default function HomePage() {
                 Start Your Career Journey Today <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="text-lg px-8 py-3 rounded-lg shadow-lg transition-transform hover:scale-105 text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10">
+            <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-3 rounded-lg shadow-lg transition-transform hover:scale-105">
               <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfJ4_gp_awH5Gh2ZM256el7613Z2Rs7LUlE8jTtuwN7ayujVw/viewform" target="_blank" rel="noopener noreferrer">
                 Register Now <ClipboardEdit className="ml-2 h-5 w-5" />
               </Link>
