@@ -1,14 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Rocket } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/resume-builder", label: "Resume Builder" },
   { href: "/video-resume", label: "Video Resume" },
   { href: "/cover-letter", label: "Cover Letter" },
-  { href: "#", label: "LinkedIn" }, // Changed from Soft Skills Hub
+  { href: "/soft-skills-hub", label: "Soft Skills Hub"},
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
@@ -18,7 +19,13 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Rocket className="h-7 w-7 text-primary" />
+          <Image 
+            src="/empowerpath-logo.png" 
+            alt="EmpowerPath Careers Logo" 
+            width={40} 
+            height={40} 
+            className="h-10 w-10" // Adjusted for consistency, can be fine-tuned
+          />
           <span className="font-bold text-xl sm:inline-block text-primary">EmpowerPath Careers</span>
         </Link>
         <nav className="hidden flex-1 items-center space-x-4 md:flex">
