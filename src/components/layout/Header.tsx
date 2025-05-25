@@ -9,7 +9,7 @@ const navItems = [
   { href: "/resume-builder", label: "Resume Builder" },
   { href: "/video-resume", label: "Video Resume" },
   { href: "/cover-letter", label: "Cover Letter" },
-  { href: "#", label: "LinkedIn"}, // Reflects previous change to LinkedIn
+  { href: "#", label: "LinkedIn"},
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
@@ -22,9 +22,9 @@ export function Header() {
           <Image
             src="/empowerpath-logo.png"
             alt="EmpowerPath Careers Logo"
-            width={48}
-            height={48}
-            className="h-12 w-12"
+            width={56}
+            height={56}
+            className="h-14 w-14" // Increased size for clarity
             priority
           />
           <span className="font-bold text-xl sm:inline-block text-primary">EmpowerPath Careers</span>
