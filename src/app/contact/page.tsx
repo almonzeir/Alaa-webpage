@@ -1,7 +1,8 @@
+
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Instagram, Youtube, Linkedin } from "lucide-react"; // Assuming TikTok is represented by Youtube
+import { Mail, Phone, MapPin, Instagram, Youtube, Linkedin } from "lucide-react"; 
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -33,8 +34,8 @@ export default function ContactPage() {
               <Mail className="h-6 w-6 text-accent mt-1" />
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <Link href="mailto:info@empowerpath.careers" className="text-muted-foreground hover:text-primary">
-                  info@empowerpath.careers
+                <Link href="mailto:Albaraa.aljamali@student.aiu.edu.my" className="text-muted-foreground hover:text-primary">
+                  Albaraa.aljamali@student.aiu.edu.my
                 </Link>
               </div>
             </div>
