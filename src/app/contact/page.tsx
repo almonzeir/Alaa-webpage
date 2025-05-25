@@ -50,7 +50,7 @@ export default function ContactPage() {
               <MapPin className="h-6 w-6 text-accent mt-1" />
               <div>
                 <h3 className="font-semibold">Our University (Optional)</h3>
-                <p className="text-muted-foreground">123 University Ave, City, State (Placeholder)</p>
+                <p className="text-muted-foreground">Albukhary International University</p>
                 {/* Optional Google Maps Embed Placeholder */}
                 {/* <div className="mt-2 h-48 bg-muted rounded-md flex items-center justify-center">Google Map Placeholder</div> */}
               </div>
