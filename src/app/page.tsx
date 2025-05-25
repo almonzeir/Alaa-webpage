@@ -1,9 +1,10 @@
+
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { ArrowRight, FileText, Video, Mail, Sparkles, Search, Users, Lightbulb, Handshake } from "lucide-react";
+import { ArrowRight, FileText, Video, Mail, Sparkles, Search, Users, Lightbulb, Handshake, ClipboardEdit } from "lucide-react";
 
 const services = [
   {
@@ -61,11 +62,18 @@ export default function HomePage() {
           <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto mb-10">
             Pathway to Success for Your Future
           </p>
-          <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-3 rounded-lg shadow-lg transition-transform hover:scale-105">
-            <Link href="/resume-builder">
-              Start Your Career Journey Today <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+          <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+            <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-3 rounded-lg shadow-lg transition-transform hover:scale-105">
+              <Link href="/resume-builder">
+                Start Your Career Journey Today <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild className="text-lg px-8 py-3 rounded-lg shadow-lg transition-transform hover:scale-105 text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10">
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfJ4_gp_awH5Gh2ZM256el7613Z2Rs7LUlE8jTtuwN7ayujVw/viewform" target="_blank" rel="noopener noreferrer">
+                Register Now <ClipboardEdit className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
           <div className="mt-12">
             {/* Placeholder for introduction video or animation */}
             <div className="aspect-video bg-slate-700/50 rounded-lg max-w-3xl mx-auto flex items-center justify-center">
