@@ -53,8 +53,17 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary via-primary/70 to-accent">
-        <div className="absolute inset-0 bg-black/30"></div>
+      <section className="relative py-20 md:py-32">
+        <Image
+          src="https://placehold.co/1920x1080.png"
+          alt="Diverse group of young professionals collaborating"
+          layout="fill"
+          objectFit="cover"
+          className="z-0"
+          data-ai-hint="community collaboration"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50 z-1"></div> {/* Adjusted overlay for better readability */}
         <div className="container relative mx-auto px-4 text-center z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-primary-foreground">
             EmpowerPath Careers
