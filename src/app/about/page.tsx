@@ -5,7 +5,7 @@ import { Users, Target, Eye, Briefcase } from "lucide-react";
 import Image from "next/image";
 
 const teamMembers = [
-  { name: "Alaaldin", role: "Team Member", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
+  { name: "Alaaldin", role: "Team Member", imageUrl: "https://firebasestudio.googleapis.com/v0/b/studiopuppet-51028.appspot.com/o/IMAGE_UPLOAD%2Fsfo8o3i0f1m1c2p0s1j?alt=media&token=e9368536-0d1b-4d7c-98f1-be29f8773db8", dataAiHint: "professional portrait" },
   { name: "Albaraa", role: "Team Member", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
   { name: "Abdallah", role: "Team Member", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
   { name: "Siti Nur", role: "Team Member", imageUrl: "https://placehold.co/300x300.png", dataAiHint: "professional portrait" },
