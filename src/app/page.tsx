@@ -56,14 +56,14 @@ export default function HomePage() {
       <section className="relative py-20 md:py-32">
         <Image
           src="https://placehold.co/1920x1080.png"
-          alt="Empowered youth embarking on their career paths"
+          alt="Inspiring image representing social business and community impact"
           layout="fill"
           objectFit="cover"
           className="z-0"
-          data-ai-hint="youth empowerment"
+          data-ai-hint="community impact"
           priority
         />
-        <div className="absolute inset-0 bg-black/50 z-1"></div> {/* Adjusted overlay for better readability */}
+        <div className="absolute inset-0 bg-black/60 z-1"></div> {/* Overlay for text readability */}
         <div className="container relative mx-auto px-4 text-center z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-primary-foreground">
             EmpowerPath Careers
