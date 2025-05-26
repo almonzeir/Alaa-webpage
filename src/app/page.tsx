@@ -55,7 +55,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative py-20 md:py-32">
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="/empowerpath-logo.png"
           alt="Inspiring image representing social business and community impact"
           layout="fill"
           objectFit="cover"
