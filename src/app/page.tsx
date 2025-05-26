@@ -56,7 +56,7 @@ export default function HomePage() {
       <section className="relative py-20 md:py-32">
         <Image
           src="https://placehold.co/1920x1080.png"
-          alt="Inspiring image representing social business and community impact"
+          alt="Inspiring image representing community impact and social business collaboration"
           layout="fill"
           objectFit="cover"
           className="z-0"
@@ -83,10 +83,16 @@ export default function HomePage() {
               </Link>
             </Button>
           </div>
-          <div className="mt-12">
-            {/* Placeholder for introduction video or animation */}
-            <div className="aspect-video bg-slate-700/50 rounded-lg max-w-3xl mx-auto flex items-center justify-center">
-              <p className="text-primary-foreground/70">Introduction Video/Animation Placeholder</p>
+          <div className="mt-12 max-w-3xl mx-auto">
+            <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="https://placehold.co/1200x675.png"
+                alt="Placeholder for introduction video or image"
+                width={1200}
+                height={675}
+                className="w-full h-full object-cover"
+                data-ai-hint="introduction presentation"
+              />
             </div>
           </div>
         </div>
