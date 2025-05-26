@@ -55,12 +55,12 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative py-20 md:py-32">
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="https://placehold.co/1920x1080/0077b6/ffffff.png" // Changed placeholder to a blue one
           alt="Hero background image for EmpowerPath Careers"
           layout="fill"
           objectFit="cover"
           className="z-0"
-          data-ai-hint="abstract professional"
+          data-ai-hint="blue abstract" // Updated hint
           priority
         />
         <div className="absolute inset-0 bg-black/60 z-1"></div> {/* Overlay for text readability */}
@@ -181,3 +181,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+    
