@@ -84,16 +84,9 @@ export default function HomePage() {
             </Button>
           </div>
           <div className="mt-12 max-w-3xl mx-auto">
-            <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="https://placehold.co/1200x675.png"
-                alt="Placeholder for introduction video or image"
-                width={1200}
-                height={675}
-                className="w-full h-full object-cover"
-                data-ai-hint="introduction presentation"
-              />
-            </div>
+          <p className="text-1xl md:text-1xl lg:text-2xl font-bold mb-6 text-primary-foreground">
+          Tailored for students, fresh graduates, and unemployed youth. Get free templates, guides, and checklists for resumes, cover letters, and more.
+          </p>
           </div>
         </div>
       </section>

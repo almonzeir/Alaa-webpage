@@ -9,7 +9,7 @@ const navItems = [
   { href: "/resume-builder", label: "Resume Builder" },
   { href: "/video-resume", label: "Video Resume" },
   { href: "/cover-letter", label: "Cover Letter" },
-  { href: "#", label: "LinkedIn"},
+  { href: "https://www.linkedin.com/", label: "LinkedIn"},
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
@@ -20,12 +20,13 @@ export function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image
-            src="/empowerpath-logo.png"
+            src="/logo.png"
             alt="EmpowerPath Careers Logo"
             width={56}
             height={56}
             className="h-14 w-14" // Increased size for clarity
             priority
+ unoptimized={true}
           />
           <span className="font-bold text-xl sm:inline-block text-primary">EmpowerPath Careers</span>
         </Link>

@@ -8,7 +8,7 @@ export interface SocialLink {
 }
 
 // Basic type for team members for the About Us page
-export interface TeamMemberSimple {
+export interface TeamMember {
   name: string;
   role: string;
   imageUrl: string; // Using string for placeholder
