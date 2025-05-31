@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.variable} antialiased flex flex-col min-h-screen bg-background`}>
+      <body className={`${poppins.variable} antialiased flex flex-col min-h-screen bg-background`} suppressHydrationWarning>
         <Header />
         <main className="flex-grow">
           {children}
