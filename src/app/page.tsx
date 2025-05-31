@@ -55,7 +55,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative py-20 md:py-32">
         <Image
-          src="https://placehold.co/1920x1080/64748b/ffffff.png?text=Team+Collaboration" // Changed placeholder
+          src="/coverpage.jpg" // Changed placeholder
           alt="Team collaborating in a modern office environment" // Updated alt text
           layout="fill"
           objectFit="cover"
