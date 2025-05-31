@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
@@ -22,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.variable} antialiased flex flex-col min-h-screen bg-background`} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body className={`${poppins.variable} antialiased flex flex-col min-h-screen bg-background`} suppressHydrationWarning={true}>
         <Header />
         <main className="flex-grow">
           {children}
