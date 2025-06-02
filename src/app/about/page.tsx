@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const teamMembers = [
   { name: "Alaaldin", role: "Team Member", imageUrl: "/Ala.jpg", dataAiHint: "professional portrait" },
-  { name: "Albaraa", role: "Team Member", imageUrl: "/albra.jpg", dataAiHint: "professional portrait" },
+  { name: "Albaraa", role: "Team Member", imageUrl: "/bobo.jpg", dataAiHint: "professional portrait" },
   { name: "Abdallah", role: "Team Member", imageUrl: "/Abdallah.jpg", dataAiHint: "professional portrait" },
   { name: "Siti Nur", role: "Team Member", imageUrl: "/siti Nur.jpg", dataAiHint: "professional portrait" },
   { name: "Norshakirah", role: "Team Member", imageUrl: "/Norshakirah.jpg", dataAiHint: "professional portrait" },
