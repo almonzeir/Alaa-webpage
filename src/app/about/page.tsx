@@ -5,12 +5,12 @@ import { Users, Target, Eye, Briefcase } from "lucide-react";
 import Image from "next/image";
 
 const teamMembers = [
-  { name: "Alaaldin", role: "Team Member", imageUrl: "/alaaldin-profile.jpg", dataAiHint: "professional portrait" },
-  { name: "Albaraa", role: "Team Member", imageUrl: "/albaraa-profile.jpg", dataAiHint: "professional portrait" },
-  { name: "Abdallah", role: "Team Member", imageUrl: "/abdallah-profile.jpg", dataAiHint: "professional portrait" },
-  { name: "Siti Nur", role: "Team Member", imageUrl: "/siti-nur-profile.jpg", dataAiHint: "professional portrait" },
-  { name: "Norshakirah", role: "Team Member", imageUrl: "/norshakirah-profile.jpg", dataAiHint: "professional portrait" },
-  { name: "Wan Atikah", role: "Team Member", imageUrl: "/wan-atikah-profile.jpg", dataAiHint: "professional portrait" },
+  { name: "Alaaldin", role: "Team Member", imageUrl: "/Ala.jpg", dataAiHint: "professional portrait" },
+  { name: "Albaraa", role: "Team Member", imageUrl: "/albra.jpg", dataAiHint: "professional portrait" },
+  { name: "Abdallah", role: "Team Member", imageUrl: "/Abdallah.jpg", dataAiHint: "professional portrait" },
+  { name: "Siti Nur", role: "Team Member", imageUrl: "/siti Nur.jpg", dataAiHint: "professional portrait" },
+  { name: "Norshakirah", role: "Team Member", imageUrl: "/Norshakirah.jpg", dataAiHint: "professional portrait" },
+  { name: "Wan Atikah", role: "Team Member", imageUrl: "/wan.jpg", dataAiHint: "professional portrait" },
 ];
 
 export default function AboutUsPage() {
