@@ -20,7 +20,7 @@ export function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image
-            src="/logo.png"
+            src="/logo.jpg"
             alt="EmpowerPath Careers Logo"
             width={56}
             height={56}
