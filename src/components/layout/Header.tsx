@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -9,6 +10,7 @@ const navItems = [
   { href: "/resume-builder", label: "Resume Builder" },
   { href: "/video-resume", label: "Video Resume" },
   { href: "/cover-letter", label: "Cover Letter" },
+  { href: "/soft-skills-hub", label: "LinkedIn Profile" }, // Changed "Soft Skills Hub" to "LinkedIn Profile"
   { href: "https://www.linkedin.com/", label: "LinkedIn"},
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },

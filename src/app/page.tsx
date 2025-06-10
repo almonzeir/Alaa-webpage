@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { ArrowRight, FileText, Video, Mail, Sparkles, Search, Users, Lightbulb, Handshake, ClipboardEdit } from "lucide-react";
+import { ArrowRight, FileText, Video, Mail, Linkedin, Search, Users, Lightbulb, Handshake, ClipboardEdit } from "lucide-react"; // Changed Sparkles to Linkedin
 
 const services = [
   {
@@ -38,14 +38,14 @@ const services = [
     iconColor: "text-purple-500"
   },
   {
-    title: "Soft Skills Hub",
-    description: "Develop essential soft skills for career success and personal growth.",
-    href: "/soft-skills-hub",
-    icon: Sparkles,
-    bgColor: "bg-amber-500/10",
-    textColor: "text-amber-600",
-    borderColor: "border-amber-500/20",
-    iconColor: "text-amber-500"
+    title: "LinkedIn Profile", // Changed from "Soft Skills Hub"
+    description: "Optimize your LinkedIn profile for professional success.", // Changed description
+    href: "/soft-skills-hub", // Kept href for now
+    icon: Linkedin, // Changed icon from Sparkles
+    bgColor: "bg-blue-500/10", // Changed to blue theme
+    textColor: "text-blue-600", // Changed to blue theme
+    borderColor: "border-blue-500/20", // Changed to blue theme
+    iconColor: "text-blue-500" // Changed to blue theme
   },
 ];
 
@@ -130,28 +130,10 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container mx-auto px-4">
           <SectionTitle title="Why EmpowerPath?" subtitle="Dedicated support for your career journey." className="mb-12" />
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="p-6 bg-card rounded-lg shadow-md">
-              <Lightbulb className="h-12 w-12 text-accent mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Expert Guidance</h3>
-              <p className="text-muted-foreground text-sm">
-                Access curated resources and expert tips for every step.
-              </p>
-            </div>
-            <div className="p-6 bg-card rounded-lg shadow-md">
-              <Users className="h-12 w-12 text-accent mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Youth Focused</h3>
-              <p className="text-muted-foreground text-sm">
-                Tailored for students, fresh graduates, and unemployed youth.
-              </p>
-            </div>
-            <div className="p-6 bg-card rounded-lg shadow-md">
-              <Handshake className="h-12 w-12 text-accent mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Free Resources</h3>
-              <p className="text-muted-foreground text-sm">
-                All our templates, guides, and checklists are free to download.
-              </p>
-            </div>
+           <div className="text-center max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              EmpowerPath Careers is dedicated to bridging the gap between education and employment for students, fresh graduates, and unemployed youth. We provide expertly curated resources, practical guides, and downloadable templates for resume building, video resume creation, cover letter writing, and LinkedIn profile optimization. Our focus is on equipping you with the essential tools and skills needed to confidently navigate the job market and achieve your career aspirations. All our core resources are free, ensuring accessible support for everyone on their pathway to success.
+            </p>
           </div>
         </div>
       </section>
