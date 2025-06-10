@@ -1,7 +1,8 @@
+
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Mail, Edit3, Download, FileCheck2 } from "lucide-react";
+import { Mail, Edit3, Download, FileCheck2, Eye } from "lucide-react"; // Added Eye icon
 import Link from "next/link";
 
 export default function CoverLetterPage() {
@@ -29,8 +30,13 @@ export default function CoverLetterPage() {
               <li>Common mistakes to avoid.</li>
             </ul>
             <Button variant="outline" asChild>
-              <Link href="#" aria-label="View Cover Letter Writing Guide (Opens in new tab)">
-                Read Full Guide (Coming Soon)
+              <Link 
+                href="https://www.canva.com/design/DAGlkBfsNGo/MbtaZW6Dn1rKPI6Al2Djqg/edit?utm_content=DAGlkBfsNGo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="View Cover Letter Writing Guide (Opens in Canva)"
+              >
+                <Eye className="mr-2 h-4 w-4" /> View Guide (Canva)
               </Link>
             </Button>
           </CardContent>
