@@ -1,3 +1,4 @@
+
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -23,8 +24,8 @@ export default function ResumeBuilderPage() {
               Learn the essentials of resume writing, from choosing the right format to tailoring your content for specific jobs.
             </p>
             <Button variant="outline" asChild>
-              <Link href="#" aria-label="View Resume Building Guide (Opens in new tab)">
-                <Eye className="mr-2 h-4 w-4" /> View Guide (Coming Soon)
+              <Link href="https://www.canva.com/design/DAGljXDguGA/hNCksf0QIYrj7fljaziXmA/edit?utm_content=DAGljXDguGA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" aria-label="View Resume Building Guide (Opens in Canva)">
+                <Eye className="mr-2 h-4 w-4" /> View Guide (Canva)
               </Link>
             </Button>
              <Button className="ml-2 bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
