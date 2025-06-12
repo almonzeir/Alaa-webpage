@@ -162,23 +162,42 @@ export default function HomePage() {
             subtitle="How EmpowerPath Careers makes a difference."
             className="mb-12"
           />
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto"> {/* Increased max-width for better layout */}
             <Card className="shadow-lg">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary flex items-center">
                   <HeartHandshake className="mr-3 h-7 w-7" />
-                  How Social Business Works
+                  The Social Business Model
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-lg text-foreground/80 leading-relaxed">
-                  A social business is a model designed to address a social problem using business methods.
-                  Unlike traditional businesses focused solely on profit maximization, a social business reinvests
-                  all its profits back into the venture to expand its social impact, cover operational costs,
-                  or fund other social projects. The primary goal is to achieve a specific social objective,
-                  such as improving education, healthcare, or, in our case, enhancing youth employability.
-                  EmpowerPath Careers operates on this principle, aiming to be self-sustaining while
-                  prioritizing our mission to support young individuals in their career journey.
+              <CardContent className="space-y-4">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                  <Image
+                    src="https://placehold.co/150x150.png" // Placeholder for Prof Yunus's picture
+                    alt="Professor Muhammad Yunus"
+                    width={150}
+                    height={150}
+                    className="rounded-lg shadow-md object-cover flex-shrink-0"
+                    data-ai-hint="professor portrait academic"
+                  />
+                  <div className="flex-grow">
+                    <p className="text-lg text-foreground/80 leading-relaxed">
+                      The concept of social business, as championed by Nobel Laureate Professor Muhammad Yunus,
+                      offers a powerful model for addressing societal challenges. He defines it as a non-dividend company
+                      created solely to solve a social problem.
+                    </p>
+                    <p className="text-lg text-foreground/80 leading-relaxed mt-2">
+                      Like a traditional business, a social business must be financially self-sustaining, covering all its costs through its operations.
+                      However, unlike profit-maximizing enterprises, investors can only recoup their initial investment.
+                      All further profits are reinvested back into the business to expand its social impact, cover operational costs,
+                      or fund other social projects.
+                    </p>
+                  </div>
+                </div>
+                <p className="text-lg text-foreground/80 leading-relaxed mt-4">
+                  The primary goal is to achieve a specific social objective, such as improving education, healthcare, or,
+                  in the case of EmpowerPath Careers, enhancing youth employability. Our project operates on this principle,
+                  aiming to be self-sustaining while prioritizing our mission to support young individuals in their career journey.
                 </p>
               </CardContent>
             </Card>
