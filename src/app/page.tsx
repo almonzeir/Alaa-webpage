@@ -173,7 +173,7 @@ export default function HomePage() {
               <CardContent className="space-y-4">
                 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
                   <Image
-                    src="https://placehold.co/150x150.png" // Placeholder for Prof Yunus's picture
+                    src="https://raw.githubusercontent.com/almonzeir/LM/main/WhatsApp%20Image%202025-07-03%20at%2015.41.09_7f9b3567.jpg"
                     alt="Professor Muhammad Yunus"
                     width={150}
                     height={150}

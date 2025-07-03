@@ -21,6 +21,12 @@ const nextConfig: NextConfig = {
         hostname: 'firebasestudio.googleapis.com', // Keeping this if it's still used elsewhere or by mistake
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        port: '',
+        pathname: '/**',
       }
       // Add other necessary domains if you use images from different sources
     ],
