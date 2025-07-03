@@ -11,7 +11,6 @@ const navItems = [
   { href: "/video-resume", label: "Video Resume" },
   { href: "/cover-letter", label: "Cover Letter" },
   { href: "/soft-skills-hub", label: "LinkedIn Profile" }, // Changed "Soft Skills Hub" to "LinkedIn Profile"
-  { href: "https://www.linkedin.com/", label: "LinkedIn"},
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
